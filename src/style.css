@@ -465,13 +465,20 @@ button:focus {
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  width: auto;
+
+  min-height: 500px;
+  max-height: 800px; 
+  overflow-y: auto; 
+
 }
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
-  overflow: hidden !important;
+  /* Remove 'overflow: hidden' from the hover effect */
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
+
 
 .blog-card {
   padding-top: 50px !important;

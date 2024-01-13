@@ -55,19 +55,10 @@ function Techstack() {
         <TbBrandGolang />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiOpenshift />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAngularjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
@@ -77,10 +68,7 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPhp />
-      </Col>      
+      </Col>    
     </Row>
   );
 }

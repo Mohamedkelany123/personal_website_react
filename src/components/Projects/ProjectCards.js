@@ -29,9 +29,7 @@ function ProjectCards(props) {
             </ul>
           </Card.Text>
         )}
-        {/* <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text> */}
+
 
         {/* GitHub buttons */}
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
