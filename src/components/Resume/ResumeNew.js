@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/cv.pdf";
+import pdf from "../../Assets/cv.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -10,11 +10,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
-  const [numPages, setNumPages] = useState(null);
-
-  const onDocumentLoadSuccess = ({ numPages }) => {
-    setNumPages(numPages);
-  };
+  const [numPages, setNumPages] = useState(1); // Set the number of pages to 1
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -36,18 +32,16 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        {/* Each page in its own Row */}
-        {Array.from({ length: numPages }, (_, index) => (
-          <Row key={`row_${index + 1}`} className="resume">
-            <Document
-              file={pdf}
-              className="d-flex justify-content-center"
-              onLoadSuccess={onDocumentLoadSuccess}
-            >
-              <Page pageNumber={index + 1} scale={width > 786 ? 1.3 : 0.5} />
-            </Document>
-          </Row>
-        ))}
+        {/* Single page in its own Row */}
+        <Row className="resume">
+          <Document
+            file={pdf}
+            className="d-flex justify-content-center"
+            onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+          >
+            <Page pageNumber={1} scale={width > 786 ? 1.3 : 0.5} />
+          </Document>
+        </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
