@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/personal_website_react/static/css/main.028a8328.css",
+    "main.js": "/personal_website_react/static/js/main.dd6985f8.js",
+    "static/js/415.fb51c11d.chunk.js": "/personal_website_react/static/js/415.fb51c11d.chunk.js",
+    "static/js/787.35dd0f9c.chunk.js": "/personal_website_react/static/js/787.35dd0f9c.chunk.js",
+    "static/media/loan.png": "/personal_website_react/static/media/loan.6e7c53949360d7a3e39a.png",
+    "static/media/zkelany2.png": "/personal_website_react/static/media/zkelany2.accae3695efbb332cdf3.png",
+    "static/media/cv.pdf": "/personal_website_react/static/media/cv.aed13b8a6dd8ad33b2a8.pdf",
+    "static/media/home-main.svg": "/personal_website_react/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
+    "static/media/about.png": "/personal_website_react/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/home-bg.jpg": "/personal_website_react/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/pre.svg": "/personal_website_react/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/personal_website_react/index.html",
+    "main.028a8328.css.map": "/personal_website_react/static/css/main.028a8328.css.map",
+    "main.dd6985f8.js.map": "/personal_website_react/static/js/main.dd6985f8.js.map",
+    "415.fb51c11d.chunk.js.map": "/personal_website_react/static/js/415.fb51c11d.chunk.js.map",
+    "787.35dd0f9c.chunk.js.map": "/personal_website_react/static/js/787.35dd0f9c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.028a8328.css",
+    "static/js/main.dd6985f8.js"
+  ]
+}
